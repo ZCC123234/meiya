@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no" >
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/ydongcss.css">
+	<style type="text/css">
+		.wrap{position: relative;overflow:hidden;}
+		.uploading{transition:all .7s;bottom:-100%;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header clf">
+			<h1 class="fl">
+				<a href="#" class="logo">变更受益人</a>
+			</h1>
+			<span class="phone">
+				400-820-8858
+			</span>
+		</div>
+		<div class="banner">
+			<div class="banner-bg"></div>
+			<p class="banner-con">变更受益人</p>
+		</div>
+		<div class="statement">
+			请填写基本信息(需与保单信息一致)
+		</div>
+		<div class="form-info">
+			<form action="" method="post" class="registerform">
+				<div class="form-group">
+					<label>投保人姓名</label>
+					<input 
+					type="" value="" 
+					placeholder="例：李明/LIMING"
+					nullmsg="投保人姓名不能为空！"
+					datatype="/^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/"
+					errormsg="请输入正确的投保人姓名"
+					 />
+					<div class="Validform_checktip"></div>
+				</div>
+				<div class="form-group">
+					<label>手机号码</label>
+					<input 
+					type="" value="" 
+					placeholder="例：18566666666"
+					nullmsg="手机码不能为空！"
+					datatype="s11-16" errormsg="手机号码最少11位字符"
+					 />
+					<div class="Validform_checktip"></div>
+				</div>
+				<div class="form-group">
+					<label>保单号码</label>
+					<input 
+					type="" value="" 
+					placeholder="例：pg8888"
+					nullmsg="保单号码不能为空！"
+					datatype="s4-11" errormsg="请输入正确的保单号码"
+					 />
+					<div class="Validform_checktip"></div>
+				</div>
+				<div class="statement">
+					请上传变更受益人所需资料<span class="statement-sm">（最大不能超过2M）</span>
+				</div>
+				<div class="backbao">
+					<div class="backbao-sq">
+						<label>申请退保表</label>
+						<input type="text" value="" placeholder="例：李明/LIMING" />
+						<a href="javascript: " class="photograph-icon"></a>
+					</div>
+					<p><a href="#">点击下载</a>（请手写签名后拍照或扫描上传）</p>
+				</div>
+				<div class="form-group lg">
+					<label>投保人身份证复印件</label>
+					<input type="" value="" placeholder="例：李明/LIMING" />
+					<a href="javascript: " class="photograph-icon"></a>
+				</div>
+				<div class="form-group mail-inp">
+					<label>邮箱地址:</label>
+					<input 
+					type="" value="" 
+					placeholder="例：abc@123.com"
+					nullmsg="邮箱地址不能为空！"
+					datatype="e" errormsg="请填写正确的邮箱格式"
+					 />
+					<div class="Validform_checktip"></div>
+				</div>
+				<div class="verification clf">
+					<label>验证码
+						<input 
+						tupt="text" value=""
+						nullmsg="请填写验证码！"
+						datatype="s4-6" 
+						errormsg="请输入正确的验证码"
+						 />
+						<div class="Validform_checktip"></div>
+					</label>
+					<span class="verification-img">
+						<img src="images/WAP_03.jpg" />
+					</span>
+				</div>
+				<div class="warning">
+					请输入姓名保单号
+				</div>
+				<input type="submit" value="提交" class="sub-btn" />
+			</form>
+			<div class="bg-black"></div>
+				<div class="uploading">
+					<a href="#">拍照</a>
+					<a href="#">从手机相册选择</a>
+					<a href="#">取消</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="js/Validform_v5.3.2_min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var $inp="<input type='text' value='' class='a' placeholder='例：李明/LIMING' />"
+			$(".import").click(function(){
+				$(this).parent(".form-group").append($inp);
+				$(this).remove();
+			});
+			$(".registerform").Validform({
+			tiptype:function(msg,o,cssctl){
+				if(!o.obj.is("form")){
+					var objtip=o.obj.siblings(".Validform_checktip");
+					cssctl(objtip,o.type);
+					objtip.text(msg);
+					}
+				}
+			});
+			$(".uploading,.bg-black").hide();
+			$(".photograph-icon").click(function(){
+				$(".uploading,.bg-black").fadeIn();
+				$(".uploading").css({bottom:"0"});
+			});
+			 $(window).scroll(function (){
+                // var offsetTop = $(window).scrollTop() + 50 +"px";
+                // $(".uploading").animate({top:offsetTop},{duration:400,queue:false});
+                //$(".uploading").css({"top":offsetTop});
+       		 }); 
+			$(".uploading a:last").click(function(){
+				$(".uploading,.bg-black").fadeOut();
+			});
+		})
+	</script>
+</body>
+</html>

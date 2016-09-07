@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no" >
+	<title>美亚保险</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<style type="text/css">
+		.Validform_checktip{padding-left: 188px;}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="wrap clearfix">
+			<h1 class="logo">
+				<a href="#">美亚</a>
+			</h1>
+			<div class="phone"></div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="wrap clearfix">
+			<div class="left-nav">
+				<dl class="nav-list">
+					<dt>自助服务</dt>
+					<dd><a href="#">退保并重新投保</a></dd>
+					<dd><a href="#">直接退保</a></dd>
+					<dd><a href="#">变更受益人</a></dd>
+					<dd><a href="#">保单查询</a></dd>
+				</dl>
+				<dl class="nav-list">
+					<dt>常见问题</dt>
+					<dd><a href="#">退保并重新投保</a></dd>
+					<dd><a href="#">直接退保</a></dd>
+					<dd><a href="#">变更受益人</a></dd>
+					<dd><a href="#">保单查询</a></dd>
+				</dl>
+			</div>
+<!--left end-->
+			<div class="right-form">
+				<h2><img src="images/1_03.png" />保单查询</h2>
+				<form action="" method="post" class="registerform">
+					<div class="form-group clearfix">
+						<label>购买渠道:</label>
+						<input type="radio" name="md" checked="checked" />美亚保险官网
+						<input type="radio" name="md" />美亚保险天猫官方旗舰店
+					</div>
+					<div class="form-group form-la">
+						<label>投保人姓名:</label>
+						<input 
+						type="text" name="" 
+						class="form-text" 
+						placeholder="例:李明/LIMING"
+						datatype="/^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/"
+						errormsg="投保人姓名必须是2到4位中文字符！"
+						nullmsg="昵称不能为空"
+						 />
+						<span class="form-la-icon"></span>
+						<div class="Validform_checktip"></div>
+					</div>
+					<div class="form-group form-la">
+						<label>保单号:</label>
+						<input 
+						type="text" name="" 
+						class="form-text" 
+						placeholder="例:abc@sina.com"
+						datatype="e" 
+						nullmsg="请填写保单号"
+						errormsg="请输入正确的保单号"
+						 />
+						<span class="form-la-icon"></span>
+						<div class="Validform_checktip"></div>
+					</div>
+					<div class="form-group form-la">
+						<label>验证码:</label>
+						<input 
+						type="text" name="" 
+						class="text-yz"
+						datatype="s4-6" 
+						nullmsg="请输入验证码"
+						errormsg="请输入正确的验证码"
+						 />
+						<img src="images/PC021psd_03.gif" width="94" height="35" class="yz-img" />
+						<a href="#" class="yz-change">换一张</a>
+						<div class="Validform_checktip"></div>
+					</div>
+					<div class="form-group mr-l">
+						<input type="checkbox" name="" id="checkbox-control" />
+						<label class="checkbox-control" for="checkbox-control"></label>
+						我同意如下
+						<a href="#">协议与条件</a>
+					</div>
+					<div class="form-btn">
+						<input type="submit" name="" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrap">
+			<div class="clearfix">
+				<dl class="foot-href">
+					<dt>旅行险购买</dt>
+					<dd>万国游踪</dd>
+					<dd>乐悠游</dd>
+					<dd>畅游神州</dd>
+					<dd>宝岛游踪</dd>
+					<dd>完美保障</dd>
+				</dl>
+				<dl class="foot-href">
+					<dt>自助服务</dt>
+					<dd>退保并重新投保</dd>
+					<dd>直接退保</dd>
+					<dd>变更受益人</dd>
+					<dd>保单查询</dd>
+				</dl>
+				<dl class="foot-href">
+					<dt>常见问题</dt>
+					<dd>旅行险选择与购买</dd>
+					<dd>售后服务</dd>
+					<dd>全球支援服务</dd>
+				</dl>
+				<dl class="foot-href qrcode">
+					<dt>微信购买旅行险</dt>
+					<dd>
+						<img src="images/PC021psd_07.jpg" width="121" height="122" />
+					</dd>
+					<dd class="qrcode">享受便捷微信支付</dd>
+					<dd class="qrcode">旅行险购买更轻松</dd>
+				</dl>
+			</div>
+			<h3 class="foot-tit">全球救援电话:+86 400-888-3080 | 24小时境外救援热线:+8621-5298-9068</h3>
+			<div class="foot-link">
+				<a href="#">隐私政策</a>|<a href="#">使用条款</a>|<a href="#">网站地图</a>
+				<p>Copyright@2016 American </p>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/Validform_v5.3.2_min.js"></script>
+<script type="text/javascript">
+	//$(".registerform").Validform();  //就这一行代码！;
+	$(".registerform").Validform({
+		tiptype:function(msg,o,cssctl){
+			if(!o.obj.is("form")){
+				var objtip=o.obj.siblings(".Validform_checktip");
+				cssctl(objtip,o.type);
+				objtip.text(msg);
+			}
+		}
+	})
+</script>
+</body>
+</html>

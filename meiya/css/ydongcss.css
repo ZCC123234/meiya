@@ -1,0 +1,47 @@
+body,p,ul,dl,dd,form,h1,h2,h3{padding:0;margin:0;}
+h1,h2,h3,h4{font-weight:400;}
+body,input{font-family:"微软雅黑";}
+a{text-decoration:none;color:#000;}
+.fl{float: left;}
+.fr{float:right;}
+.clf:after{content: "\200B";height:0;display: block;clear: both;}
+.wrap{width:16.0rem;padding-bottom:0.95rem;margin:0 auto;background-color:#E9E9E9;}
+.header{height:2.075rem;background-color: #00A4E4;}
+.logo{display:block;width:2.275rem;height:1.575rem;margin-left:1.0rem;margin-top:0.35rem;background:url(../images/logo_03.png) no-repeat;background-size:100%;font-size:0;text-indent: -9999px;}
+.phone{float:right;margin-top:0.55rem;margin-right:0.55rem;padding-left:1rem;font-size:0.875rem;background:url(../images/WAP_06.png) no-repeat left;background-size:0.775rem 0.8rem;color:#fff;}
+.banner{height:8.9rem;background:url(../images/WAP_01.jpg) no-repeat;background-size:100%;overflow:hidden;}
+.banner-bg{margin-top:1.55rem;height:2.275rem;background:url(../images/WAP_12.png) no-repeat center;background-size:2.575rem 2.275rem;}
+.banner-con{margin-top:0.8rem;font-size:0.7rem;color:#fff;text-align:center;}
+.statement{padding-left:0.825rem;height:2.175rem;line-height:2.175rem;font-size:0.7rem;}
+.form-group{position:relative;font-size:0;padding: 1.0rem 0 0.725rem;border-bottom:0.025rem solid #EAEAEA;background-color:#fff;}
+.form-group label,.backbao-sq label{display:inline-block;width:3.6rem;padding-left:0.825rem;font-size:0.6rem;}
+.form-group input,.backbao-sq input{border:0;font-size:0.6rem;vertical-align:0.025rem;outline:none;}
+.form-group input{width: 10.0rem;}
+.statement-sm{font-size:0.45rem;}
+.backbao{background-color:#fff;padding-bottom: 0.525rem;border-bottom: 0.025rem solid #F7F7F7;}
+.backbao-sq{position:relative;margin-left:0.8rem;padding-top:0.875rem;padding-bottom: 0.475rem;border-bottom: 0.025rem dotted #ccc;font-size:0;}
+.backbao p{margin-left: 3.775rem;margin-top:0.525rem;font-size:0.5rem;color:#C41C30;}
+.backbao p a{color:#00A4E4;}
+.photograph-icon{display:inline-block;width:1.05rem;height:0.8rem;background:url(../images/WAP_15.png) no-repeat;background-size:100%;position: absolute;right:0.85rem;top:0.75rem;}
+.form-group.lg label{width:6.1rem;}
+.form-group.lg input{width:8.75rem;}
+.form-group.lg .photograph-icon{top:0.95rem;}
+.form-group.lg .Validform_wrong{right:0.25rem;}
+.mail-inp{margin-top:0.525rem;}
+.verification{padding:0.125rem 0;background-color: #fff;}
+.verification label{float:left;padding:1.0rem 0 0.925rem;margin-left:0.85rem;font-size:0.6rem;}
+.verification input{border:0;outline:none;width:5.0rem;font-size:0.6rem;}
+.verification-img{float:right;border-left:0.025rem solid #E9E9E9;}
+.verification-img img{width:5.5rem;height:2.475rem;}
+.warning{min-height:0.85rem;padding-left:2.075rem;margin-top:0.95rem;background:url(../images/WA1P_10.png) no-repeat 0.875rem;background-size: 0.825rem 0.85rem;font-size:0.625rem;}
+.sub-btn{width:15.55rem;height:1.275rem;margin-top:0.475rem;margin-left:0.25rem;background-color: #E36F1D;color:#fff;border-radius:0.1rem;border:0;font-size:0.825rem;}
+.uploading{position:absolute;z-index:3;bottom:0;width:100%;box-shadow:0 -0.1rem 0.1rem rgba(0,0,0,.5);}
+.uploading a{display: block;height:2.35rem;line-height: 2.35rem;text-align: center;font-size:0.55rem;background-color: #fff;border-top:0.025rem solid #F6F6F6;}
+.uploading a:nth-child(3){background-color:#00A4E4;color: #fff; }
+.bg-black{position: absolute;left:0;top:0;height:100%;width:100%;z-index:2;background:rgba(0,0,0,.5);}
+.Validform_checktip{font-size:0.4rem;position: absolute;top:1.09rem;right:1.45rem;color:#FF7272;}
+.Validform_error{border:0.025rem solid #FF8383!important;position: relative;background-color:#FFF1F1;}
+.Validform_right{display:none!important;}
+.verification{position: relative;}
+.verification .Validform_wrong{left:0.85rem;top:2.125rem;}
+.form-group.lg span{font-size:0.55rem;color:#C41C30;}
